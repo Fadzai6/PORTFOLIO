@@ -1,0 +1,295 @@
+*{padding: 0;
+margin:0; 
+}
+@import url('https://fonts.googleapis.com');
+body{background-color: black; color: #ffff;
+cursor: none;}
+
+
+
+
+/***********************Cursor starts*************************************************/
+
+.cursor {
+    position: fixed;
+    top: 50%;
+    left: -100px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    z-index: 9999;
+    -webkit-transition-property: width, height, background;
+            transition-property: width, height, background;
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s;
+    -webkit-transition-timing-function: cubic-bezier(.2, .96, .34, 1);
+            transition-timing-function: cubic-bezier(.2, .96, .34, 1);
+    border-radius: 50%;
+    background: #DA0000;
+    overflow: hidden;
+}    
+body.out .cursor {
+    width: 0;
+    height: 0;
+}    
+.cursor.large {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    -webkit-box-shadow: 0 0 30px #DA0000;
+        box-shadow: 0 0 30px #DA0000;
+}    
+.cursor.small {
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    -webkit-box-shadow: 0 0 30px #DA0000;
+        box-shadow: 0 0 30px #DA0000;
+}    
+.cursor.right {
+    width: 70px;
+    height: 70px;
+    background: #DA0000;
+}    
+.cursor.open {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    -webkit-box-shadow: 0 0 30px #DA0000;
+        box-shadow: 0 0 30px #DA0000;
+}
+.cursor.href {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    -webkit-box-shadow: 0 0 30px #DA0000;
+        box-shadow: 0 0 30px #DA0000;
+}
+.cursor.input {
+    width: 2px;
+    height: 25px;
+    background: #DA0000;
+    border-radius: 0;
+    -webkit-animation: form_input .7s infinite;
+    animation: form_input .7s infinite;
+}
+@-webkit-keyframes form_input {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes form_input {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}    
+.cursor.black {
+    background: #000;
+}
+.touch .cursor {
+    display: none;
+}
+   
+#particles-js{ margin-top: -11px; object-fit: cover; min-height: 20%;} 
+
+/***********************cursor ends*************************************************/
+
+
+/***********************Welcome starts*************************************************/
+.welcome{  text-align: center; 
+    h1{background-image: url(./images/red1.jpeg); font-family: 'luckiest Guy'; font-size: 100px;  text-align: center; background-size: contain;
+    background-size: cover; background-position: bottom; background-clip: text; -webkit-background-clip: text; color: transparent; padding-top:125px;}
+
+.button{ position: relative;   width: 200px; height: 60px;  top: 85%;  border-radius: 40px ; border: none; background-color: white;  margin-bottom: 380px;}
+.OFF{border-radius: 60PX; width: 50PX; height: 50px; color: white; background-color: #DA0000; border: none; position: absolute; top: 40.6%; left: 45%;}}
+/***********************Welcome ends*************************************************/
+
+a, .navigation{ cursor: pointer; }
+
+nav{position: absolute; top: 100px; right: 50px;  }
+.navigation{ position: fixed; right: -50%;  width: 16%; height: 100%; background: #da00000C; transition: .5s; }
+.navigation ul li{color: white; text-align: right; text-transform: uppercase; list-style-type: none; font-size: 1.2em; padding: 10px 30px;  border-bottom: 1pt solid rgba(255, 255, 255, 0.353); width: 80%; line-height: 2.5;} 
+.hamburger, .bar{position: fixed; }
+.hamburger{display: block; top: 5%; left: 95%; width: 30px; height:30px; transform: translateY(-50%); border: 0; background: 0 0;}
+.bar{background: rgb(193, 24, 24); top: 3px; width: 100%; height: 4px; transition: all .3s ease-in; }
+#bar2{top: 11px; }
+#bar3{top: 19px; }
+.open #bar1{background-color: white; transform: rotate(45deg) translate(6px, 5px);}
+.active{ right: 0%; }
+
+.open #bar2{background-color: transparent;}
+.open #bar3{background-color:white; transform: rotate(-45deg) translate(6px, -5px);}
+
+
+
+
+.cursor{background-color: #DA0000; transition: width 0.5s, height 0.5s;  position: fixed; left: 10%; width: 20px; height: 20px; transform: translate(-50%, -50%); mix-blend-mode: difference; border-radius: 50%; border: 1px solid black; pointer-events: none;   width: 40px;
+    height: 40px;
+    background: transparent;
+    -webkit-box-shadow: 0 0 30px red;
+        box-shadow: 0 0 30px red;
+}  
+
+.cursor .href {transition: width 0.5s, height 0.5s; width: 405px; height: 405px;   -webkit-box-shadow: 0 0 30px #DA0000;
+    box-shadow: 0 0 30px #DA0000; background-color: transparent; }
+
+
+
+/***********************Hero starts*************************************************/
+.hero{ background-image:  linear-gradient(to right, #eff0f4 0% , #eff0f4 50%, black 50%, black 100%); min-height: 100vh; min-width: 100%;  color: grey;
+.top{ width: 10%;} 
+.text{position: absolute; top:40%;margin-left: 55px; }
+.nav{ margin-left: 55px;}
+.digital{position: absolute; width: 395px; height: 121px; left: 82%; top: 40%; font-weight:  700; font-size: 100px; line-height: 121px; color: rgba(255, 0, 0, 0.059); transform: rotate(90deg);}
+.marketer{position: absolute; width: 556px; height: 121px;left: 53%;top: 85%;font-family: 'Inter';font-style: normal;font-weight: 700; font-size: 100px; line-height: 121px;color: rgba(255, 0, 0, 0.059); }
+    .button2{ position: absolute;   width: 200px; height: 60px;  margin-top: 130px;  border-radius: 40px ; border: none; background: linear-gradient(90deg,#DA0000 0%, #AC0642 100%);left: 5%; }
+.ON{border-radius: 60PX; width: 50PX; height: 50px; color: white; background-color: #DA0000; border: none; position: relative; margin-top: 135px; left: 30%; color:linear-gradient rgba(255, 255, 255, 1) rgba(205, 86, 86, 1)}
+.circle{opacity: 28; position: relative; top:46%; left:122%;  width: 300px; height: 300px;  border-radius: 50%; background: radial-gradient(50% 50% at 50% 50%,  #ff6a83 0%, #DA0000 0.01%, #000000 90.1%, #DA0000 100%,); box-shadow: inset 10PX -100PX 20PX 29PX rgba(0, 0, 0, 0.25); padding-top: 5px;  text-align: center; justify-content: center; }
+
+.circle{ animation: circleAnimate 4S ease-out infinite;}
+@keyframes circleAnimate {
+    100%{
+       opacity: 2;
+       transform: scale(.8);
+    }
+
+
+}
+
+.eclipse{border-radius: 300px; position: absolute;border: 10px solid rgba(35, 33, 33, 0.18); backdrop-filter: blur(20px);width: 400px; height: 400px; left: 490px; top: 20%;shape-outside: circle(); margin: 25px 25px; }}
+/***********************Hero ends*************************************************/
+
+
+
+/***********************About starts*************************************************/
+
+.about{background: #eff0f4; min-height: 100vh; min-width: 100%;   border-top: 4PX SOLID black; 
+.style{width: 15%; height: 2%;box-shadow: none ; background-color: #fff;  margin-top: 2px; left:5%;  background-color: transparent;}
+img{ width: 20%; border-radius: 266px; position: relative; left:30%; margin-top: 40%; width: 40%; box-shadow: 20px 4px 4px rgba(0, 0, 0, 0.25);}
+.square{position: absolute; top: 125%;   left:5%; width: 280px; height: 450px; background:  black;}
+h3{color: #000000; font-size: 30px; font-weight: 700;}
+.text{position: absolute; left: 40%;top: 125%; ;color: rgba(0, 0, 0, 0.46);}
+.icon{background-color: #DA0000; color: white; border-radius: 40px; width: 50px; height: 50px; text-align: center; padding-top: 16px;}
+.icons{text-align: left; margin-top: 10%; }
+
+
+
+
+}
+/***********************About ends*************************************************/
+
+
+/***********************Service starts********************************************/
+
+
+
+
+
+.headr{ display: flex; flex-direction: column; 
+    h3{position: absolute; left:42%; top:10%;color: white; font-size: 30px; font-weight: 700; }
+.diamond{width: 7%; height: 4%;box-shadow: none ; background-color: #fff;  background-color: transparent; position: absolute;left:46%; top:15%;}
+
+}
+.CONTAINER{ position: relative; display: flex; justify-content: center;  align-items: center;  flex-wrap: wrap;  padding: 50px 0px; height: 100vh;  background: black; color: grey; background-blend-mode: darken; cursor: cursor;
+    .droplets{display: flex; }}
+
+.CONTAINER .drop{position: relative;width: 350px; height: 350px; box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05), 25px 35px 20px rgba(0,0,0,0.05), 25px 30px 30px rgba(0,0,0,0.05), 
+inset -20px -20px 25px rgba(255, 255, 255, 0.9); transition: 0.5s ease-in-out; display: flex; justify-content: center; align-items: center;}
+
+.CONTAINER .drop:nth-child(1){border-radius: 57% 43% 43% 57% / 43%  43% 57% 57%; background-color: #eff0f4; right: 5%;}
+.CONTAINER .drop:nth-child(2){border-radius: 61% 39% 52% 48% / 44%  59% 41% 56%; background-color: #eff0f4;}
+.CONTAINER .drop:nth-child(3){border-radius: 35% 65% 31% 69% / 57%  59% 41% 43%; background-color: #eff0f4;left: 5%;}
+
+.CONTAINER .drop:hover{ border-radius: 50%;}
+
+.CONTAINER .drop::before{content: ''; position: absolute;top: 50px;left: 85px;width: 35px;height: 35px;background: #fff;border-radius: 50%;opacity: 0.9;}
+
+
+
+    .CONTAINER .drop::after{content: '';position: absolute;top: 90px;left: 110px;width: 15px;height: 15px;background: #fff;border-radius: 50%;opacity: 0.9;}
+
+
+.CONTAINER .drop .content{ position: relative; display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; padding: 40px; gap: 15px;}
+
+.CONTAINER .drop .content h1{ position: relative; width: 80px; height: 80px; background: #eff0f4; border-radius: 50%; box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1), 
+        inset -2px -5px 10px rgba(255, 255, 255, 1),
+        15px 15px 10px rgba(0, 0, 0, 0.05),
+        15px 15px 10px rgba(0, 0, 0, 0.025) ;  
+        display: flex; justify-content: center; align-items: center; font-size: 2em; color: red;}
+h5{color: #ff0000;}
+.CONTAINER{h3{text-align: center; padding-bottom: 500px;  }}
+.CONTAINER .drop  .content a{ 
+    position: relative; top: 45%;padding: 10px 25px; background: rgb(239, 15, 15);  text-decoration: none; color: #fff; border-radius: 25px; 
+    font-weight: 500; text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); opacity: 0.75; transition: 0.5s;}
+
+
+.CONTAINER  .drop  .content a:hover{ opacity: 1;}
+.CONTAINER  .drop   .content a::before {content: ''; position: absolute; left: 50%; transform: translateX(-50%); width: 50%; height: 3px; border-radius: 5px; top: 8px; background: rgba(255, 255, 255, 0.5);}
+
+
+
+/***********************Service ends*************************************************/
+
+
+
+
+
+
+/***********************contact starts*************************************************/
+
+.contact{  display: flex; align-items: center; justify-content: center;  width: 100%; height: 75vh; background: rgba(0, 0, 0, 0.9)  url(./images/red.jpeg); object-fit: cover; background-position: top; background-size: cover; background-blend-mode: darken;
+h3{text-align: center; margin-bottom: 40px;}
+form{width: 100%; max-width: 600px;}
+
+.input-group{margin-bottom: 30px; position: relative; } 
+input, textarea{width: 100%; padding: 10px; outline: 0; border: 1px solid #ffff; color: #ffff; background: transparent; font-size: 15px; }
+label{transition: 0.2s; height: 100%; position: absolute; left: 0; top: 0; padding: 10px; color: #ffff; cursor: text;}
+.namee{padding-left: 20px;}
+
+///////////BUTTON////////////////
+button{ padding: 8px 8px; color: #ffff; outline: none; background: transparent; border: 1px solid #ffff; cursor: pointer;} 
+
+
+///////////BUTTON////////////////
+
+
+input:focus~label,input:valid~label, textarea:focus~label, textarea:valid~label{top: -35px; font-size: 14px; }
+.flex{display: flex; align-items: center; justify-content: space-between;} .flex .input-group{ flex-basis: 50%;}}
+
+
+
+/***********************contact ends*************************************************/
+
+footer{text-align: center; color: #fff; font-size: 10px; height: 15%;}
+
+
+@media (max-width: 575px){
+.hero{
+    .circle{position: inherit; top: inherit;}
+    .eclipse{position: inherit; top: inherit;}
+    .digital{left: 55%;}
+    .marketer{left: 55%;}
+}
+
+
+
+
+
+
+
+    
+}
+
+

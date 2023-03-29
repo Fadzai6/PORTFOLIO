@@ -1,0 +1,5 @@
+@mixin xs {
+    @media (min-width:nap-get($breakpoints,"xs")) {
+       @content; 
+    }
+}
